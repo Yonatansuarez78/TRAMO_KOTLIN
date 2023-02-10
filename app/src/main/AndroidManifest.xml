@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permiso para acceder al almacenamiento externo -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TRAMO"
+        tools:targetApi="31">
+        <activity
+            android:name=".IrConductorActivity6"
+            android:exported="false"
+            android:parentActivityName=".IrConductorActivity5" />
+        <activity
+            android:name=".IrConductorActivity5"
+            android:exported="false"
+            android:parentActivityName=".IrConductorActivity4" />
+        <activity
+            android:name=".IrConductorActivity4"
+            android:exported="false"
+            android:parentActivityName=".IrConductorActivity3" />
+        <activity
+            android:name=".IrConductorActivity3"
+            android:exported="false"
+            android:parentActivityName=".IrConductorActivity2" />
+        <activity
+            android:name=".IrConductorActivity2"
+            android:exported="false"
+            android:parentActivityName=".IrConductorActivity" />
+        <activity
+            android:name=".IrConductorActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".TerminosCondicionesActivity"
+            android:exported="false"
+            android:parentActivityName=".RegistroPersonaTwoActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".RegistroPersonaTwoActivity"
+            android:exported="false"
+            android:parentActivityName=".RegistroPersonaActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".RegistroPersonaActivity"
+            android:exported="false"
+            android:parentActivityName=".PersonaActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".PersonaActivity"
+            android:exported="false"
+            android:parentActivityName=".IrClienteActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".IrClienteActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>
