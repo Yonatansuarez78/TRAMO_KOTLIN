@@ -1,5 +1,6 @@
 package com.inovation.tramo
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.inovation.tramo.databinding.ActivityIrConductor6Binding
@@ -13,5 +14,14 @@ class IrConductorActivity6 : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbarIrConductor6)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        binding.RegistroConductor7.setOnClickListener{
+            goIrConductor7()
+        }
+    }
+
+    private fun goIrConductor7() {
+        val intent = Intent(this, IrConductorActivity7::class.java)
+        startActivity(intent)
     }
 }
