@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IrConductorActivityFinal">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarIrConductorFinal"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ToolbarTheme"
+        app:title=".."
+        app:titleTextColor="@color/white"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:layout_marginEnd="10dp"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginBottom="16dp">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Señor Conductor"
+          android:layout_gravity="center"
+          android:layout_marginTop="50dp"
+          android:textColor="#050505"
+          android:textSize="30dp">
+      </TextView>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="En unas horas ya seras parte de TRAMO Tenemos que verificar que tus datos sean validos."
+          android:layout_marginTop="20dp"
+          android:textColor="#050505"
+          android:textSize="15dp">
+      </TextView>
+
+      <ImageView
+          android:id="@+id/imageView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/logofin"
+          android:layout_margin="30dp"
+          android:layout_gravity="center"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#050505"
+          android:layout_gravity="center"
+          android:text="Nos comunicaremos contigo una vez validemos los datos">
+      </TextView>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="#050505"
+          android:layout_gravity="center"
+          android:text="Despues ya podras 'iniciar sesiòn'">
+      </TextView>
+  </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/RegistroConductorTerminado"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="INICIAR SESIÒN"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_weight="0"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="10dp">
+    </com.google.android.material.button.MaterialButton>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

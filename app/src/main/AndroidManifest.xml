@@ -15,6 +15,18 @@
         android:theme="@style/Theme.TRAMO"
         tools:targetApi="31">
         <activity
+            android:name=".IrConductorActivityFinal"
+            android:exported="false"
+            android:parentActivityName=".IrConductorActivity10" />
+        <activity
+            android:name=".IrConductorActivity10"
+            android:exported="false"
+            android:parentActivityName=".IrConductorActivity9" />
+        <activity
+            android:name=".IrConductorActivity9"
+            android:exported="false"
+            android:parentActivityName=".IrConductorActivity7" />
+        <activity
             android:name=".IrConductorActivity8"
             android:exported="false"
             android:parentActivityName=".IrConductorActivity7" />
