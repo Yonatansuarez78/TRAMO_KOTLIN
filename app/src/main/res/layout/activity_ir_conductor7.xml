@@ -15,23 +15,429 @@
         app:title=".."
         app:titleTextColor="@color/white"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="80dp"
+        android:text="Datos del vehiculo"
+        android:textAlignment="center"
+        android:textColor="#FF3535"
+        android:textSize="15sp"/>
 
     <LinearLayout
+        android:layout_marginTop="140dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+           <TextView
+               android:layout_width="170dp"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="20dp"
+               android:layout_marginEnd="10dp"
+               android:textSize="20dp"
+               android:gravity="center_vertical"
+               android:textColor="#070707"
+               android:text="Marca">
+           </TextView>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:boxBackgroundColor="#00FF0000"
+                android:padding="5dp"
+                app:boxStrokeColor="#00FF0000"
+                app:boxStrokeWidth="0dp"
+                app:endIconTint="#131313"
+                app:hintTextColor="#101010"
+                app:startIconTint="#323232"
+                android:inputType="text"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_edit_text"
+                    android:hint="Ingresa la Marca"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="#070707"
+                android:text="Modelo vehiculo">
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:boxBackgroundColor="#00FF0000"
+                android:padding="5dp"
+                app:boxStrokeColor="#00FF0000"
+                app:boxStrokeWidth="0dp"
+                app:endIconTint="#131313"
+                app:hintTextColor="#101010"
+                app:startIconTint="#323232"
+                android:inputType="number"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_edit_text"
+                    android:hint="Ingresa el modelo"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="#070707"
+                android:text="Numero Ejes">
+            </TextView>
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:boxBackgroundColor="#00FF0000"
+                android:padding="5dp"
+                app:boxStrokeColor="#00FF0000"
+                app:boxStrokeWidth="0dp"
+                app:endIconTint="#131313"
+                app:hintTextColor="#101010"
+                app:startIconTint="#323232"
+                android:inputType="number"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_edit_text"
+                    android:hint="Ingresa el numero ejes"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="#070707"
+                android:text="Tipo Vehiculo">
+            </TextView>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:boxBackgroundColor="#00FF0000"
+                app:boxStrokeColor="#00FF0000"
+                android:padding="5dp"
+                app:boxStrokeWidth="0dp"
+                app:endIconTint="#131313"
+                app:hintTextColor="#101010"
+                android:inputType="text"
+                app:startIconTint="#323232"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_edit_text"
+                    android:hint="Ingresa el tipo"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="#070707"
+                android:text="Traccion vehiculo">
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:boxBackgroundColor="#00FF0000"
+                app:boxStrokeColor="#00FF0000"
+                app:boxStrokeWidth="0dp"
+                app:endIconTint="#131313"
+                app:hintTextColor="#101010"
+                app:startIconTint="#323232"
+                android:inputType="text"
+                android:padding="5dp"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_edit_text"
+                    android:hint="Ingresa la tracion"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="#070707"
+                android:text="Placas Vehiculo">
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:boxBackgroundColor="#00FF0000"
+                android:padding="5dp"
+                app:boxStrokeColor="#00FF0000"
+                app:boxStrokeWidth="0dp"
+                app:endIconTint="#131313"
+                app:hintTextColor="#101010"
+                app:startIconTint="#323232"
+                android:inputType="text"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_edit_text"
+                    android:hint="Ingresa la placa"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="#070707"
+                android:text="Placa trailer">
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:boxBackgroundColor="#00FF0000"
+                app:boxStrokeColor="#00FF0000"
+                app:boxStrokeWidth="0dp"
+                android:padding="5dp"
+                app:endIconTint="#131313"
+                android:inputType="text"
+                app:hintTextColor="#101010"
+                app:startIconTint="#323232"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_edit_text"
+                    android:hint="Ingresa placa trailer"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:text="Peso vacio"
+                android:gravity="center_vertical"
+                android:textColor="#070707"
+                android:textSize="20dp"></TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:padding="5dp"
+                app:boxBackgroundColor="#00FF0000"
+                app:boxStrokeColor="#00FF0000"
+                app:boxStrokeWidth="0dp"
+                app:endIconTint="#131313"
+                app:hintTextColor="#101010"
+                android:inputType="text"
+                app:startIconTint="#323232"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_edit_text"
+                    android:hint="Ingresa peso vacio"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:textColor="#070707"
+                android:text="Tipo combustible">
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:boxBackgroundColor="#00FF0000"
+                app:boxStrokeColor="#00FF0000"
+                app:boxStrokeWidth="0dp"
+                app:endIconTint="#131313"
+                android:inputType="text"
+                app:hintTextColor="#101010"
+                app:startIconTint="#323232"
+                android:padding="5dp"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_edit_text"
+                    android:hint="Ingresa tipo combustible"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <com.google.android.material.button.MaterialButton
-        android:id="@+id/RegistroConductor8"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:text="Siguiente"
-        android:textColor="@color/white"
-        android:backgroundTint="@color/black"
-        android:layout_marginTop="50dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"/>
+            android:id="@+id/RegistroConductor8"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Siguiente"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
 
     </LinearLayout>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
+
+
+  
+
+
+     
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
